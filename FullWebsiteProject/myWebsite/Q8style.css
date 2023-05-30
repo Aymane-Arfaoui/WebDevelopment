@@ -1,0 +1,225 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #0d74f5;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .sidebar .animal {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar .logoimg {
+    max-width: 100%;
+  }
+  
+  .sidebar .links {
+    margin-top: 0px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar .links li {
+    margin-bottom: 0px;
+  }
+  
+  .sidebar .links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar .hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 60px;
+    background-color: #ffffff;
+  }
+  
+  /* Main content styles */
+  .num1 {
+    margin: 0 auto;
+    width: 50%;
+    padding-left: 320px;
+    padding-right: 20px;
+  }
+  
+  .num2 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .num2 > div {
+    margin-top: 50px;
+  }
+  
+  .num2 > div:first-child {
+    margin-top: 0;
+  }
+  
+  .num2 > div:last-child {
+    margin-bottom: 50px;
+  }
+  
+  .num2 p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .num2 img {
+    max-width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .num2 input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #0d74f5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .num2 input[type="submit"]:hover {
+    background-color: #0552a5;
+  }
+  
+  /* Footer styles */
+  .footer {
+    height: 40px;
+    background-color: black;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-container{
+    margin-left: 250px;
+  }
+  /*container for find a dog*/
+  .main-container1{
+    margin-left: 350px;
+    margin-top: 20px;
+    
+    
+  }
+  
+  #button{
+    width: 180px;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 20px;
+    background: #0d74f5;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+#button:hover{
+    background-color: black;
+    color: white;
+}
+
+#myForm {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .labels {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .radio {
+    margin-right: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  select {
+    padding: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+#password {
+    
+    width: 200px;
+  }
+
+  .links li a:hover {
+    color:#0d74f5 ;
+    background-color: white;
+    width: 100%;
+  }
+
+  .links li a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .links li {
+    margin: 10px 0;
+  }
+  
+  
+
+  

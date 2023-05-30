@@ -1,0 +1,110 @@
+ acccount.html
+ function validateForm(event) {
+                    event.preventDefault(); 
+                    const username = document.getElementById("name").value;
+                    const password = document.getElementById("password").value;
+                    const usernameRegex = /^[a-zA-Z0-9]+$/;
+                    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]{4,}$/;
+                    if (!usernameRegex.test(username)) {
+                        alert("Invalid username. Username can only contain letters (both upper and lower case) and digits.");
+                        return false;
+                    }
+                    if (!passwordRegex.test(password)) {
+                        alert("Invalid password. Password must be at least 4 characters long and have at least one letter and one digit.");
+                        return false;
+                    }
+
+                    return true;
+                    }
+
+                    const form = document.querySelector("form");
+                    form.addEventListener("submit", validateForm);
+
+
+g8give.php
+
+                     function validateForm() {
+                let radios = document.getElementsByName('1');
+                let selectedRadio1 = Array.prototype.slice.call(radios).some(radio => radio.checked);
+
+                let radio2 = document.getElementsByName('2');
+                let selectedRadio2 = Array.prototype.slice.call(radio2).some(radio => radio.checked);
+
+                let radio3 = document.getElementsByName('3');
+                let selectedRadio3 = Array.prototype.slice.call(radio3).some(radio => radio.checked);
+
+                let radio4 = document.getElementsByName('Gender');
+                let selectedRadio4 = Array.prototype.slice.call(radio4).some(radio => radio.checked);
+
+                let radio5 = document.getElementsByName('5');
+                let selectedRadio5 = Array.prototype.slice.call(radio5).some(radio => radio.checked);
+
+                let text6 = document.getElementsByName('6')[0];
+                let selectedText6 = text6.value.trim();
+
+                let text7 = document.getElementsByName('7')[0];
+                let selectedText7 = text7.value.trim();
+
+                let text8 = document.getElementsByName('8')[0];
+                let selectedText8 = text8.value.trim();
+                
+
+
+                let ageCategory = document.querySelector('select[name="ageCategory"]').value;
+
+            if (!selectedRadio1 || !selectedRadio2|| !selectedRadio3 ||!selectedRadio4 ||!selectedRadio5 ||!selectedText6 ||!selectedText7 || !selectedText8 ||ageCategory === '') {
+                alert('Please fill out all fields before submitting the form');
+                return false;
+            }
+            return true;
+            }
+
+            let form = document.getElementById('myForm');
+            form.addEventListener('submit', (event) => {
+            if (!validateForm()) {
+                event.preventDefault();
+            }
+            });
+
+
+
+
+q8find.html
+function validateForm() {
+                let radios = document.getElementsByName('1');
+                let selectedRadio1 = Array.prototype.slice.call(radios).some(radio => radio.checked);
+
+                let radio2 = document.getElementsByName('2');
+                let selectedRadio2 = Array.prototype.slice.call(radio2).some(radio => radio.checked);
+
+                let radio3 = document.getElementsByName('3');
+                let selectedRadio3 = Array.prototype.slice.call(radio3).some(radio => radio.checked);
+
+                let radio4 = document.getElementsByName('Gender');
+                let selectedRadio4 = Array.prototype.slice.call(radio4).some(radio => radio.checked);
+
+                let ageCategory = document.querySelector('select[name="ageCategory"]').value;
+
+            if (!selectedRadio1 || !selectedRadio2|| !selectedRadio3 ||!selectedRadio4 || ageCategory === '') {
+                alert('Please fill out all fields before submitting the form');
+                return false;
+            }
+            return true;
+            }
+
+            let form = document.getElementById('myForm');
+            form.addEventListener('submit', (event) => {
+            if (!validateForm()) {
+                event.preventDefault();
+            }
+            });
+
+
+
+            <li><a href="Q8home.php">Home</a></li>
+                    <li><a href="Q8browse.php">Browse Available Pets</a></li> 
+                    <li><a href="Q8find.php">Find a Dog/Cat</a></li>
+                    <li><a href="Q8dog.php">Dog Care</a></li>
+                    <li><a href="Q8cat.php">Cat Care</a></li>
+                    <li><a href="Q8give.php">Have a Pet to Give Away</a></li>
+                    <li><a href="Q8contact.php">Contact Us</a></li>
